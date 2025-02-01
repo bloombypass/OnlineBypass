@@ -1,0 +1,74 @@
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x16aee4,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->>
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x1992dc,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> 
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x2608a0,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> 
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x347bf4,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> 
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6bbc8,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> accept
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6bcd0,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> clock_gettime
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6bf94,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> openat
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6c024,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> imp.inet_pton
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6be80,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> connect
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6bb80,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> imp.popen
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6c03c,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> imp.fileno
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6bacc,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> imp.syscall
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6be38,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> imp.fwrite
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6ba24,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> imp.kill
+MemoryPatch::createWithHex(OBFUSCATE("libanogs.so") ,0x6b82c,OBFUSCATE("00 00 A0 E3 1E FF 2F E1")).Modify(); //->> imp.getpid
+PATCH_LIB("libanogs.so", "0x2598BC", "00 00 B0 E3 1E FF 2F E1");
+PATCH_LIB("libanogs.so", "0x6B888", "00 00 B0 E3 1E FF 2F E1");
+PATCH_LIB("libanogs.so", "0x346234", "00 20 70 47");
+PATCH_LIB("libanogs.so", "0x2598bc", "00 00 B0 E3 1E FF 2F E1");
+PATCH_LIB("libanogs.so", "0xD4D3C", "00 20 70 47");
+PATCH_LIB("libanogs.so", "0xD54AC", "00 20 70 47");
+PATCH_LIB("libUE4.so", "0x36c7eac", "00 00 A0 E3 1E FF 2F E1");
+PATCH_LIB("libUE4.so", "0x3A655D0", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x9A03850", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21BA000", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21BA01C", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21BA028", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21BA060", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x9A03798", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA474", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA4A8", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA540", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA608", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA5EC", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA7B4", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA78C", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA75C", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA6FC", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA86C", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA97C", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA988", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA994", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CA9E8", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CAAF4", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CAAE4", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CAAD4", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CAC38", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CAC70", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CAC74", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21CAC80", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x899FCFC", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x899FD68", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x899FD5C", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x899FD4C", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x899FD54", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x899FD78", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x21EDDB8", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x89A3184", "00 00 00 00");
+PATCH_LIB("libUE4.so", "0x899FCFC", "00 00 00 00");
+MemoryPatch::createWithHex("libanogs.so", 0x149d08, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x14af38, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x14d934, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x1496a0, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x14ba80, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x14aa18, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x149264, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x12de80, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x12de90, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x12dea0, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x12deb0, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x12e970, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x12e9e0, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x12ebf0, "00 00 80 D2 C0 03 5F D6");
+MemoryPatch::createWithHex("libanogs.so", 0x12eb50, "00 00 80 D2 C0 03 5F D6");
